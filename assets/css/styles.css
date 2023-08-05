@@ -61,7 +61,6 @@ html {
 }
 
 body {
-  overflow-x: hidden;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -71,6 +70,7 @@ body {
   -moz-transition: background 0.4s;
   -ms-transition: background 0.4s;
   -o-transition: background 0.4s;
+  max-width: 100%;
 }
 
 h1,
@@ -249,9 +249,6 @@ header {
 }
 
 @media screen and (max-width: 767px) {
-  body{
-    overflow-x: hidden;
-  }
   .nav__menu {
     position: fixed;
     top: -100%;
@@ -950,9 +947,7 @@ header {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
-  body{
-    overflow-x: hidden;
-  }
+
   .container {
     margin-inline: 1rem;
   }
@@ -1016,9 +1011,6 @@ header {
 /* For medium devices */
 
 @media screen and (min-width: 576px) {
-  body{
-    overflow-x: hidden;
-  }
   .home__container,
   .about__container,
   .recently__container,
@@ -1033,9 +1025,6 @@ header {
 }
 
 @media screen and (min-width: 767px) {
-  body{
-    overflow-x: hidden;
-  }
   .nav {
     column-gap: 3rem;
   }
@@ -1070,9 +1059,6 @@ header {
 }
 /* For large devices */
 @media screen and (min-width: 1024px) {
-  body{
-    overflow-x: hidden;
-  }
   .section {
     padding-block: 7rem 1.5rem;
   }
@@ -1280,18 +1266,12 @@ header {
 }
 
 @media screen and (min-width: 1064px) {
-  body{
-    overflow-x: hidden;
-  }
   .container {
     margin-inline: auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  body{
-    overflow-x: hidden;
-  }
   .home__leaf-1 {
     width: 150px;
     top: 5rem;
